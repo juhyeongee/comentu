@@ -66,12 +66,18 @@ const Home = () => (
     <Bottom>
       <MidTitle>인기 부트 캠프</MidTitle>
       <CardHorder>
-        <Card>
-          <Link to="./ClassDetail">Look Details</Link>
-        </Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Link to="./ClassDetail">
+          <Card></Card>
+        </Link>
+        <Link to="./ClassDetail">
+          <Card></Card>
+        </Link>
+        <Link to="./ClassDetail">
+          <Card></Card>
+        </Link>
+        <Link to="./ClassDetail">
+          <Card></Card>
+        </Link>
       </CardHorder>
       <MidTitle>특별 할인 캠프</MidTitle>
       <CardHorder>
