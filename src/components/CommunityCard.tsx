@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Card = () => (
-  <Link to="./ClassDetail">
+const CommunityCard = () => (
+  <Link to="./Community">
     <div
       style={{
         height: "300px",
@@ -18,4 +18,4 @@ const Card = () => (
   </Link>
 );
 
-export default Card;
+export default CommunityCard;

@@ -5,6 +5,7 @@ import cardPic from "../images/target.jpeg";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import HomeButton from "../components/HomeButton";
 import Card from "../components/Card";
+import CommunityCard from "../components/CommunityCard";
 
 const Top = styled.div`
   display: flex;
@@ -77,11 +78,11 @@ const Home = () => (
       <Banner></Banner>
       <MidTitle> 커뮤니티 </MidTitle>
       <CardHorder>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <CommunityCard />
+        <CommunityCard />
+        <CommunityCard />
+        <CommunityCard />
+        <CommunityCard />
       </CardHorder>
     </Bottom>
   </>
