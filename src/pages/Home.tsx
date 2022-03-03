@@ -3,6 +3,8 @@ import styled from "styled-components";
 import backPic from "../images/img2.png";
 import cardPic from "../images/target.jpeg";
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import HomeButton from "../components/HomeButton";
+import Card from "../components/Card";
 
 const Top = styled.div`
   display: flex;
@@ -35,28 +37,20 @@ const MidTitle = styled.div`
 
 const TopPhoto = styled.img``;
 
-const Card = styled.div`
-  height: 300px;
-  width: 180px;
-  border: 3px solid grey;
-  background-image: url("./images/target.jpeg");
-  border-radius: 10px;
-  margin-left: 30px;
-`;
-
 const CardHorder = styled.div`
   display: flex;
 `;
 
 const Banner = styled.div`
   margin-top: 50px;
-  width: 1000px;
+  width: 90%;
   height: 100px;
   background-color: tomato;
 `;
 
 const Home = () => (
   <>
+    <HomeButton />
     <Top>
       <TopInner>
         <TopTitle>개발은 코멘투와 함께</TopTitle>
@@ -66,27 +60,29 @@ const Home = () => (
     <Bottom>
       <MidTitle>인기 부트 캠프</MidTitle>
       <CardHorder>
-        <Link to="./ClassDetail">
-          <Card></Card>
-        </Link>
-        <Link to="./ClassDetail">
-          <Card></Card>
-        </Link>
-        <Link to="./ClassDetail">
-          <Card></Card>
-        </Link>
-        <Link to="./ClassDetail">
-          <Card></Card>
-        </Link>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </CardHorder>
       <MidTitle>특별 할인 캠프</MidTitle>
       <CardHorder>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </CardHorder>
       <Banner></Banner>
+      <MidTitle> 커뮤니티 </MidTitle>
+      <CardHorder>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </CardHorder>
     </Bottom>
   </>
 );

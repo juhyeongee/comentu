@@ -1,16 +1,21 @@
 import React from "react";
-import styled from "styled-components";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 //import style from "../src/style.css";
+import { Reset } from "styled-reset";
 import { Routes, Route } from "react-router-dom";
-import ClassDetails from "./components/ClassDetails";
+import ClassDetails from "./pages/ClassDetails";
+import Pay from "./pages/Pay";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/ClassDetail" element={<ClassDetails />} />
-    </Routes>
+    <>
+      <Reset />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ClassDetail" element={<ClassDetails />} />
+        <Route path="/Pay" element={<Pay />} />
+      </Routes>
+    </>
   );
 }
 
