@@ -6,6 +6,9 @@ const Card = () => (
   <Link to="./ClassDetail">
     <div
       style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         height: "300px",
         width: "180px",
         border: " 3px solid grey",

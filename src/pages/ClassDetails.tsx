@@ -7,12 +7,16 @@ import PayButton from "../components/PayButton";
 const BackLabel = styled.div`
   width: 100%;
   height: 400px;
-  background-color: teal;
+  background-color: wheat;
 `;
 
 const ClassDetailInfo = styled.div`
-  width: 500px;
-  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+  width: 600px;
+  height: 300px;
   background-color: gray;
 `;
 
@@ -21,8 +25,36 @@ const ClassDetails = () => {
     <>
       <HomeButton></HomeButton>
       <BackLabel></BackLabel>
-      <ClassDetailInfo> 대답없는 VOD에 라이브로 답하다 </ClassDetailInfo>
-      <PayButton></PayButton>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            position: "relative",
+            top: "-100px",
+          }}
+        >
+          <ClassDetailInfo> 대답없는 VOD에 라이브로 답하다 </ClassDetailInfo>
+          <div
+            style={{
+              backgroundColor: "teal",
+              border: "1px solid black",
+              display: "flex",
+              height: "300px",
+              width: "180px",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <PayButton></PayButton>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

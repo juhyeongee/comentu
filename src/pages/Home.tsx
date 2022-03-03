@@ -43,6 +43,9 @@ const CardHorder = styled.div`
 `;
 
 const Banner = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
   width: 90%;
   height: 100px;
@@ -75,7 +78,7 @@ const Home = () => (
         <Card />
         <Card />
       </CardHorder>
-      <Banner></Banner>
+      <Banner> 배너 광고 입니다</Banner>
       <MidTitle> 커뮤니티 </MidTitle>
       <CardHorder>
         <CommunityCard />
