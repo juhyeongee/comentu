@@ -143,8 +143,8 @@ const Home = () => (
   <div style={{ display: "flex", justifyContent: "center" }}>
     <Header>
       <HeaderInner>
-        <HomeButton />
         <div style={{ position: "relative", top: "90px" }}>
+          <HomeButton />
           <HeaderTitle>개발은</HeaderTitle>
           <HeaderTitle>코멘투와 함께</HeaderTitle>
           <div
