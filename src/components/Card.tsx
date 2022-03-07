@@ -1,22 +1,30 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Card = () => (
+const Card = (props: any) => (
   <Link to="./ClassDetail">
     <div
       style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "300px",
-        width: "180px",
-        border: " 3px solid grey",
+        height: "280px",
+        width: "224px",
         borderRadius: "10px",
-        marginLeft: "30px",
+        marginRight: "21.5px",
+        //left: 0px;
+        //top: 0px;
       }}
     >
-      Go to Details
+      <img
+        style={{
+          height: "100%",
+          width: "100%",
+          objectFit: "cover",
+          borderRadius: "10px",
+        }}
+        src={props.pictureNumber}
+      ></img>
     </div>
   </Link>
 );

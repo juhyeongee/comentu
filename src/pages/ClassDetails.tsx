@@ -32,28 +32,26 @@ const ClassDetails = () => {
           alignItems: "center",
         }}
       >
-        <div
+        <ClassDetailInfo
           style={{
             display: "flex",
             position: "relative",
             top: "-100px",
           }}
         >
-          <ClassDetailInfo> 대답없는 VOD에 라이브로 답하다 </ClassDetailInfo>
-          <div
-            style={{
-              backgroundColor: "teal",
-              border: "1px solid black",
-              display: "flex",
-              height: "300px",
-              width: "180px",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <PayButton></PayButton>
-          </div>
-        </div>
+          대답없는 VOD에 라이브로 답하다
+        </ClassDetailInfo>
+        <PayButton //이거 이렇게 텍스트로 전달하는걱 맞아..?
+          style='
+            backgroundColor: "teal",
+            border: "1px solid black",
+            display: "flex",
+            height: "300px",
+            width: "180px",
+            alignItems: "center",
+            justifyContent: "center",
+          '
+        ></PayButton>
       </div>
     </>
   );

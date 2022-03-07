@@ -1,16 +1,15 @@
 import React from "react";
-import styled from "styled-components";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomeButton = () => (
   <Link to="/" style={{ textDecoration: "none" }}>
     <div
       style={{
-        color: "tomato",
-        fontSize: "50px",
-        position: "absolute",
-        top: "40px",
-        left: "40px",
+        color: "white",
+        fontSize: "25px",
+        position: "relative",
+        top: "-230px",
+        fontWeight: "bolder",
       }}
     >
       Comentu
