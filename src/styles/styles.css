@@ -1,0 +1,10 @@
+.bannerFontStyle {
+  color: #ffffff;
+  fontfamily: "Noto Sans";
+  fontsize: 24px;
+  fontstyle: normal;
+  fontweight: 700;
+  lineheight: 34px;
+  letterspacing: -0.01em;
+  textalign: left;
+}

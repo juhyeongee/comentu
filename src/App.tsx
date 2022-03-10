@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import ClassDetails from "./pages/ClassDetails";
 import Pay from "./pages/Pay";
 import Community from "./pages/Community";
+import GlobalStyle from "./styles/globalStyles";
 
 function App() {
   return (

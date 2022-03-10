@@ -1,8 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+const FooterBackground = styled.div`
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 160px;
+`;
 const Container = styled.div`
-  background: #eeeeee;
+  background: #aaaaaa;
   position: absolute;
   width: 100%;
   height: 160px;
